@@ -125,6 +125,13 @@
   <div class="timeline">
 
     <div class="stop">
+      <div class="stop-bullet">&#x2615;</div>
+      <div class="stop-time">07:40</div>
+      <div class="stop-title">שחרית — שדרות</div>
+      <div class="stop-desc">תפילת שחרית לפני היציאה.</div>
+    </div>
+
+    <div class="stop">
       <div class="stop-bullet">&#x1F3E0;</div>
       <div class="stop-time">בוקר — יציאה</div>
       <div class="stop-title">יציאה מהבית — שדרות</div>
@@ -216,10 +223,17 @@
 
   <div class="timeline">
     <div class="stop">
-      <div class="stop-bullet">&#x1F3E0;</div>
-      <div class="stop-time">חזרה הביתה</div>
-      <div class="stop-title">נסיעה חזרה לשדרות</div>
-      <div class="stop-desc">סיום הנופש, נסיעה בחזרה ללובה אליאב, שדרות.</div>
+      <div class="stop-bullet">&#x2615;</div>
+      <div class="stop-time">07:40</div>
+      <div class="stop-title">שחרית — משכן ראובן</div>
+      <div class="stop-desc">בית כנסת משכן ראובן, בסמוך לדירה.</div>
+    </div>
+
+    <div class="stop">
+      <div class="stop-bullet">&#x1F9F3;</div>
+      <div class="stop-time">11:00 — צ׳ק אאוט</div>
+      <div class="stop-title">עזיבת הדירה</div>
+      <div class="stop-desc">צ׳ק אאוט עד 11:00, נסיעה בחזרה ללובה אליאב, שדרות.</div>
     </div>
   </div>
 
@@ -246,7 +260,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 const waypoints = [
   { label: 'שדרות — הבית',             coords: [31.5265, 34.5970], emoji: '&#x1F3E0;', color: '#555' },
-  { label: 'עין חמד (אקווה בלה)',       coords: [31.7974, 35.1260], emoji: '&#x1F333;', color: '#2e7d32' },
+  { label: 'עין חמד (אקווה בלה)',       coords: [31.7982, 35.1266], emoji: '&#x1F333;', color: '#2e7d32' },
   { label: 'ירושלים — ארוחת צהריים',   coords: [31.7784, 35.2126], emoji: '&#x1F374;', color: '#b45309' },
   { label: 'גרשון אבנר 10 — Airbnb',   coords: [31.7442, 35.2278], emoji: '&#x1F511;', color: '#1e4976' },
   { label: 'קניון הדר — באולינג',       coords: [31.7534, 35.2135], emoji: '&#x1F3B3;', color: '#7b1fa2' },
@@ -289,7 +303,7 @@ const categories = [
   },
   {
     title: '&#x1F3B8; בידור ומוזיקה',
-    items: ['גיטרה', 'JBL קטנה', 'מחשב + סרט'],
+    items: ['גיטרה', 'JBL קטנה', 'מחשב + סרט', 'משחקי קופסה (אליאס ועוד)'],
   },
   {
     title: '&#x1F6E0;&#xFE0F; ציוד ולוגיסטיקה',
