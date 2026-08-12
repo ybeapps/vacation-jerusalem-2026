@@ -200,10 +200,31 @@
     </div>
 
     <div class="stop">
-      <div class="stop-bullet">&#x2764;</div>
-      <div class="stop-time">יום שלם</div>
-      <div class="stop-title">פעילויות בירושלים</div>
-      <div class="stop-desc">פרטים יתווספו...</div>
+      <div class="stop-bullet">&#x1F4A7;</div>
+      <div class="stop-time">בוקר</div>
+      <div class="stop-title">עין חנייא</div>
+      <div class="stop-desc">מעיין עין חנייא — שקט, ירוק וקריר בהרי ירושלים.</div>
+    </div>
+
+    <div class="stop">
+      <div class="stop-bullet">&#x1F333;</div>
+      <div class="stop-time">בוקר</div>
+      <div class="stop-title">עין חמד (אקווה בלה) — ביקור שני</div>
+      <div class="stop-desc">חזרה לעין חמד לאחר הביקור ביום הראשון.</div>
+    </div>
+
+    <div class="stop">
+      <div class="stop-bullet">&#x1F6B6;</div>
+      <div class="stop-time">אחרית הצהריים</div>
+      <div class="stop-title">טיול ברחוב בן יהודה</div>
+      <div class="stop-desc">חנינו ליד רחוב רש"י, הגענו בתחבורה ציבורית למרכז העיר וטיילנו ברגל בשדרות בן יהודה.</div>
+    </div>
+
+    <div class="stop">
+      <div class="stop-bullet">&#x1F54C;</div>
+      <div class="stop-time">ערב</div>
+      <div class="stop-title">כותל המערבי</div>
+      <div class="stop-desc">ביקור בכותל המערבי בירושלים.</div>
     </div>
 
     <div class="stop">
@@ -224,16 +245,37 @@
   <div class="timeline">
     <div class="stop">
       <div class="stop-bullet">&#x2615;</div>
-      <div class="stop-time">07:40</div>
-      <div class="stop-title">שחרית — משכן ראובן</div>
-      <div class="stop-desc">בית כנסת משכן ראובן, בסמוך לדירה.</div>
+      <div class="stop-time">שחרית</div>
+      <div class="stop-title">שחרית — האוהל שליד הבניין</div>
+      <div class="stop-desc">תפילת שחרית באוהל הגדול שמשמש כבית כנסת, ממש ליד הדירה.</div>
+    </div>
+
+    <div class="stop">
+      <div class="stop-bullet">&#x1F3A5;</div>
+      <div class="stop-time">בוקר</div>
+      <div class="stop-title">סרט + ארוחת בוקר ופינוי</div>
+      <div class="stop-desc">צפייה בסרט <strong>"שליחות חשאית בדמשק"</strong> תוך כדי ארוחת בוקר ואריזה.</div>
     </div>
 
     <div class="stop">
       <div class="stop-bullet">&#x1F9F3;</div>
       <div class="stop-time">11:00 — צ׳ק אאוט</div>
       <div class="stop-title">עזיבת הדירה</div>
-      <div class="stop-desc">צ׳ק אאוט עד 11:00, נסיעה בחזרה ללובה אליאב, שדרות.</div>
+      <div class="stop-desc">צ׳ק אאוט עד 11:00.</div>
+    </div>
+
+    <div class="stop">
+      <div class="stop-bullet">&#x1F308;</div>
+      <div class="stop-time">בוקר / צהריים</div>
+      <div class="stop-title">זמן חופשי בירושלים</div>
+      <div class="stop-desc">עוד סיור לפי חשק לפני הנסיעה הביתה.</div>
+    </div>
+
+    <div class="stop">
+      <div class="stop-bullet">&#x1F37D;&#xFE0F;</div>
+      <div class="stop-time">14:00</div>
+      <div class="stop-title">ארוחת צהריים אצל סבא שוקי</div>
+      <div class="stop-desc">פסגת זאב — רחוב הארבעה 4.</div>
     </div>
   </div>
 
@@ -243,7 +285,6 @@
     <div id="packing-root"></div>
   </div>
 
-  <div class="coming-soon">פרטי יום ב׳ יתווספו בקרוב...</div>
 
 </main>
 
@@ -260,10 +301,30 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 const waypoints = [
   { label: 'שדרות — הבית',             coords: [31.5265, 34.5970], emoji: '&#x1F3E0;', color: '#555' },
+  { label: 'עין חנייא',                 coords: [31.7435, 35.1567], emoji: '&#x1F4A7;', color: '#00796b' },
   { label: 'עין חמד (אקווה בלה)',       coords: [31.7982, 35.1266], emoji: '&#x1F333;', color: '#2e7d32' },
   { label: 'ירושלים — ארוחת צהריים',   coords: [31.7784, 35.2126], emoji: '&#x1F374;', color: '#b45309' },
   { label: 'גרשון אבנר 10 — Airbnb',   coords: [31.7442, 35.2278], emoji: '&#x1F511;', color: '#1e4976' },
   { label: 'קניון הדר — באולינג',       coords: [31.7534, 35.2135], emoji: '&#x1F3B3;', color: '#7b1fa2' },
+  { label: 'רחוב בן יהודה',             coords: [31.7818, 35.2157], emoji: '&#x1F6B6;', color: '#c62828' },
+  { label: 'כותל המערבי',               coords: [31.7767, 35.2343], emoji: '&#x1F54C;', color: '#4e342e' },
+  { label: 'פסגת זאב — סבא שוקי',      coords: [31.8192, 35.2422], emoji: '&#x1F37D;', color: '#1565c0' },
+];
+
+// Full journey route (in travel order)
+const route = [
+  [31.5265, 34.5970],  // Sderot
+  [31.7982, 35.1266],  // Ein Hemed (Day 1)
+  [31.7784, 35.2126],  // Lunch
+  [31.7442, 35.2278],  // Airbnb
+  [31.7534, 35.2135],  // Hadar Mall
+  [31.7435, 35.1567],  // Ein Haniya (Day 2)
+  [31.7982, 35.1266],  // Ein Hemed again
+  [31.7818, 35.2157],  // Ben Yehuda
+  [31.7767, 35.2343],  // Western Wall
+  [31.7442, 35.2278],  // back to Airbnb
+  [31.8192, 35.2422],  // Pisgat Ze'ev (Day 3)
+  [31.5265, 34.5970],  // Sderot (return)
 ];
 
 function makeIcon(emoji, color) {
@@ -280,7 +341,7 @@ waypoints.forEach(w => {
     .bindPopup(`<strong style="font-family:'Arial Hebrew',Arial;direction:rtl">${w.label}</strong>`);
 });
 
-L.polyline.antPath(waypoints.map(w => w.coords), {
+L.polyline.antPath(route, {
   delay: 900, dashArray: [12, 22], weight: 4,
   color: '#c8883a', pulseColor: '#1e4976', paused: false,
 }).addTo(map);
